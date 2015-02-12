@@ -4,6 +4,7 @@ from tkinter import *
 class ResizingCanvas(Canvas):
 	height=0
 	width=0
+	
 	def __init__(self,parent,**kwargs):
 		print("Init Resizing Canvas")
 		Canvas.__init__(self,parent,**kwargs)
@@ -80,5 +81,5 @@ frame_2.grid_rowconfigure(0, weight=1)
 frame_2.grid_columnconfigure(0, weight=1)
 frame_2.grid_columnconfigure(1, weight=1)
 
-
+# mainloop
 window.mainloop()
